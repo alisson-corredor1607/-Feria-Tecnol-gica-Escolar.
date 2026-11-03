@@ -6,17 +6,17 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #222733;
-    color: #fcead0;
+    background: #0b1020;
+    color: #e8efff;
     line-height: 1.7;
 }
 
 .Encabezado {
-    background: linear-gradient(135deg, #222733, #353941, #d38e2b);
-    color: #ffffff;
+    background: linear-gradient(135deg, #101b3f, #30206b, #087eaa);
+    color: white;
     text-align: center;
     padding: 90px 25px;
-    border-bottom: 4px solid #d38e2b;
+    border-bottom: 4px solid #00d9ff;
 }
 
 .Encabezado h1 {
@@ -25,7 +25,7 @@ body {
     letter-spacing: 2px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    text-shadow: 0 0 20px rgba(211, 142, 43, 0.5);
+    text-shadow: 0 0 20px #00cfff;
 }
 
 .Encabezado h2 {
@@ -33,7 +33,7 @@ body {
     margin: auto;
     font-size: 1.15rem;
     font-weight: 400;
-    color: #fcead0;
+    color: #d5e7ff;
     line-height: 1.8;
 }
 
@@ -46,15 +46,15 @@ body {
 .Contenido h3,
 .Info_Evento h3,
 .formularios_Inscripcion h3 {
-    color: #d38e2b;
+    color: #00d9ff;
     font-size: 1.8rem;
     margin-bottom: 20px;
-    border-left: 5px solid #ebba7f;
+    border-left: 5px solid #8b5cf6;
     padding-left: 15px;
 }
 
 .Contenido p {
-    color: #ebba7f;
+    color: #b9c6df;
     font-size: 1.05rem;
     margin-bottom: 30px;
 }
@@ -68,31 +68,129 @@ body {
 }
 
 .Contenido li {
-    background: #353941;
-    border: 1px solid rgba(235, 186, 127, 0.3);
+    background: #151f38;
+    border: 1px solid #263858;
     border-radius: 12px;
     padding: 22px;
-    color: #fcead0;
+    color: #e2ecff;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .Contenido li:hover {
     transform: translateY(-7px);
-    background: #2b303a;
-    border-color: #d38e2b;
-    box-shadow: 0 8px 25px rgba(211, 142, 43, 0.25);
+    background: #1d3155;
+    border-color: #00d9ff;
+    box-shadow: 0 8px 25px rgba(0, 217, 255, 0.15);
 }
 
 .Info_Evento {
     max-width: 1050px;
     margin: 60px auto;
     padding: 40px;
-    background: linear-gradient(135deg, #353941, #222733);
-    border: 1px solid #d38e2b;
+    background: linear-gradient(135deg, #172746, #202052);
+    border: 1px solid #344c78;
     border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
+
+.Info_Evento p {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 12px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #00d9ff;
+    color: #dce8ff;
+    font-size: 1.05rem;
+}
+
+/* ===== FORMULARIO DE INSCRIPCIÓN ===== */
+.formularios_Inscripcion {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #151f38;
+    border: 1px solid #30466b;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.formularios_Inscripcion h3 {
+    text-align: center;
+    border-left: none;
+    border-bottom: 2px solid #00d9ff;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.formularios_Inscripcion label {
+    display: block;
+    margin-bottom: 8px;
+    color: #c5d8ff;
+    font-weight: 600;
+}
+
+.formularios_Inscripcion input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #354b70;
+    border-radius: 8px;
+    outline: none;
+    background: #0b1429;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.formularios_Inscripcion input:focus {
+    border-color: #00d9ff;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.25);
+}
+
+.formularios_Inscripcion input[type="submit"] {
+    background: linear-gradient(90deg, #087eaa, #7650d8);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.formularios_Inscripcion input[type="submit"]:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.4);
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.footer {
+    background: #080d19;
+    text-align: center;
+    padding: 25px;
+    border-top: 2px solid #00d9ff;
+    color: #91a4c5;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+
+    .Encabezado {
+        padding: 60px 20px;
+    }
+
+    .Encabezado h1 {
+        font-size: 2.3rem;
+    }
+
+    .Encabezado h2 {
+        font-size: 1rem;
+    }
+
+    .Contenido {
+        margin: 35px auto;
+    }
 
     .Info_Evento,
     .formularios_Inscripcion {
