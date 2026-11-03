@@ -94,5 +94,15 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.Info_Evento p {
-    background
+    .Info_Evento,
+    .formularios_Inscripcion {
+        margin: 35px 15px;
+        padding: 25px;
+    }
+
+    .Contenido h3,
+    .Info_Evento h3,
+    .formularios_Inscripcion h3 {
+        font-size: 1.4rem;
+    }
+}
